@@ -1,0 +1,92 @@
+.header {
+    padding: 0;
+    height: var(--height-header);
+}
+
+.header .toggle-sidebar {
+    margin: 0 10px;
+}
+
+.header-branch__name {
+    max-width: 160px;
+    padding-left: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: 600;
+    /* max-width: 600px; */
+    text-overflow: ellipsis;
+    transition: all .2s ease;
+    font-size: 14px;
+    color: #111;
+}
+
+.notify {
+    position: relative;
+    margin-left: auto;
+    position: relative;
+    height: 48px;
+    width: 44px;
+}
+
+.notify:hover {
+    background-color: #000;
+}
+
+.notify:hover::before {
+    content: "";
+    width: 0;
+    height: 0;
+    /* border-bottom: 8px solid transparent; */
+    border-left: 22px solid transparent;
+    border-right: 22px solid transparent;
+    border-top: 8px solid #000;
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+
+}
+
+.account-info {
+    padding-right: 20px;
+}
+
+.account-info .user-ava {
+    background: #e2e2e2;
+    margin-right: 6px;
+    position: relative;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+
+}
+
+.user-ava .icon {
+    position: absolute;
+    scale: 50% 50%;
+    /* transform: translateY(); */
+    /* width: 32px;
+    height: 32px; */
+}
+
+.user-name {
+    color: #111;
+    font-size: 14px;
+    display: flex;
+    margin-right: 8px;
+}
+
+.user-name .display-user {
+    white-space: nowrap;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.account-info__more {
+    width: 14px;
+    height: 14px;
+}

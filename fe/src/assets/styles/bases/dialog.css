@@ -1,0 +1,51 @@
+.dialog-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.3);
+
+}
+
+.dialog-container {
+    min-width: 360px;
+    max-width: 420px;
+    /* height: 200px; */
+    /* border: 1px solid red; */
+    box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.3);
+    padding: 24px;
+    background-color: #fff;
+    position: relative;
+}
+
+.dialog__header {
+    margin-bottom: 24px;
+}
+
+.dialog-header__title {
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.dialog__content {
+    flex: 1;
+}
+
+.dialog__bottom {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.dialog__bottom .btn {
+    margin: 0;
+}
+
+.dialog__bottom .btn~.btn {
+    margin-left: 8px;
+}
